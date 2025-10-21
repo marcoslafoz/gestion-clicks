@@ -9,7 +9,13 @@
   <h1>Contador de Clicks. Grupo (Marcos, Cristian, Iván, David)</h1>
   <button id="btn">Haz clic</button>
   <p id="contador">0</p>
-
+  <button id="reset">Reiniciar</button>
+  <script>
+    document.getElementById("reset").addEventListener("click", () => {
+      contador = 0;
+      document.getElementById("contador").innerText = contador;
+    });
+  </script>
   <script>
     let contador = 0;
     document.getElementById("btn").addEventListener("click", () => {
