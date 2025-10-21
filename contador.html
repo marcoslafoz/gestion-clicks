@@ -23,5 +23,13 @@
       document.getElementById("contador").innerText = contador;
     });
   </script>
+  <p id="hora"></p>
+  <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      
+      const ahora = new Date();
+      document.getElementById("hora").innerText = "Último clic: " + ahora.toLocaleTimeString();
+    });
+  </script>
 </body>
 </html>
